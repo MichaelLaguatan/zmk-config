@@ -1,0 +1,16 @@
+if SHIELD_MARBLE_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "marble"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_MARBLE_LEFT
+
+if SHIELD_MARBLE_LEFT || SHIELD_MARBLE_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_MARBLE_LEFT || SHIELD_MARBLE_RIGHT
